@@ -1,61 +1,33 @@
-## Origami es una libreria de CSS  1/03/24
-esta libreria es de facil uso para hacer paginas en minutos
-## utilidades de esta libreria:
-### colores
-#### colores de background
-##### colores primarios de background
-bg-green -> color verde
-bg-red -> color rojo
-bg-blue -> color azul
-##### colores neutros de background
-bg-grey -> color gris
-bg-white -> color blanco
-bg-black -> color negro
-##### otros colores de background
-bg-yellow -> color amarillo
-#### colores de fuente
-##### colores primarios de fuente
-c-green -> color verde
-c-red -> color rojo
-c-blue -> color azul
-##### colores neutros de fuente
-c-grey -> color gris
-c-white -> color blanco
-c-black -> color negro
-##### otros colores de fuente
-c-yellow -> color amarillo
-#### colores customizados
-en esta libreria se puede adjuntar un archivo css con la 
-siguiente sintaxis:
->:root {
-    --one: #004b23; 
-    --two: #006400;
-    --three: #007200;
-    --four: #008000;
-    --five: #38b000;
-    --six: #70e000;
-    --seven: #9ef01a;
-    --eight: #ccff33;
-}
-
-despues puedes usar cada uno de los colores con:
-bg-one -> en este caso seria el color ``--one: #004b23; ``
-
-### width y height
-#### width en px
-w-200
-w-300
-w-400
-w-auto
-#### height en px
-h-50
-h-100
-h-200
-h-auto
 
 
-## valores por defecto
-margin ``0`` y uso de box model en todo el documento html,
-algunas etiquetas tienen valores por defecto como color, altura, ancho,padding y margin para que una pagina pueda tener una opcion inicial de estilos
-> header
-este elemento tiene un ``width`` auto, el height minimo es de ``30px``, tiene un ``padding`` por defecto  de ``10px`` sin ``margin`` y un color #d00000ff 
+<!--
+  <<< Author notes: Step 2 >>>
+  Start this step by acknowledging the previous step.
+  Define terms and link to docs.github.com.
+  Historic note: previous version checked for empty pull request, changed to the correct theme `minima`.
+-->
+
+## Step 2: Configure your site
+
+_You turned on GitHub Pages! :tada:_
+
+We'll work in a branch, `my-pages`, that I created for you to get this site looking great. :sparkle:
+
+Jekyll uses a file titled `_config.yml` to store settings for your site, your theme, and reusable content like your site title and GitHub handle. You can check out the `_config.yml` file on the **Code** tab of your repository.
+
+We need to use a blog-ready theme. For this activity, we will use a theme named "minima".
+
+### :keyboard: Activity: Configure your site
+
+1. Browse to the `_config.yml` file in the `my-pages` branch.
+1. In the upper right corner, open the file editor.
+1. Add a `theme:` set to **minima** so it shows in the `_config.yml` file as below:
+   ```yml
+   theme: minima
+   ```
+1. (optional) You can modify the other configuration variables such as `title:`, `author:`, and `description:` to further customize your site.
+1. Commit your changes.
+1. (optional) Create a pull request to view all the changes you'll make throughout this course. Click the **Pull Requests** tab, click **New pull request**, set `base: main` and `compare:my-pages`.
+1. Wait about 20 seconds then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step.
+
+
