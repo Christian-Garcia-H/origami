@@ -1,54 +1,61 @@
-<header>
+## Origami es una libreria de CSS  1/03/24
+esta libreria es de facil uso para hacer paginas en minutos
+## utilidades de esta libreria:
+### colores
+#### colores de background
+##### colores primarios de background
+bg-green -> color verde
+bg-red -> color rojo
+bg-blue -> color azul
+##### colores neutros de background
+bg-grey -> color gris
+bg-white -> color blanco
+bg-black -> color negro
+##### otros colores de background
+bg-yellow -> color amarillo
+#### colores de fuente
+##### colores primarios de fuente
+c-green -> color verde
+c-red -> color rojo
+c-blue -> color azul
+##### colores neutros de fuente
+c-grey -> color gris
+c-white -> color blanco
+c-black -> color negro
+##### otros colores de fuente
+c-yellow -> color amarillo
+#### colores customizados
+en esta libreria se puede adjuntar un archivo css con la 
+siguiente sintaxis:
+>:root {
+    --one: #004b23; 
+    --two: #006400;
+    --three: #007200;
+    --four: #008000;
+    --five: #38b000;
+    --six: #70e000;
+    --seven: #9ef01a;
+    --eight: #ccff33;
+}
 
-<!--
-  <<< Author notes: Course header >>>
-  Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
-  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Add your open source license, GitHub uses MIT license.
--->
+despues puedes usar cada uno de los colores con:
+bg-one -> en este caso seria el color ``--one: #004b23; ``
 
-# GitHub Pages
+### width y height
+#### width en px
+w-200
+w-300
+w-400
+w-auto
+#### height en px
+h-50
+h-100
+h-200
+h-auto
 
-_Create a site or blog from your GitHub repositories with GitHub Pages._
 
-</header>
-
-<!--
-  <<< Author notes: Step 1 >>>
-  Choose 3-5 steps for your course.
-  The first step is always the hardest, so pick something easy!
-  Link to docs.github.com for further explanations.
-  Encourage users to open new tabs for steps!
--->
-
-## Step 1: Enable GitHub Pages
-
-_Welcome to GitHub Pages and Jekyll :tada:!_
-
-The first step is to enable GitHub Pages on this [repository](https://docs.github.com/en/get-started/quickstart/github-glossary#repository). When you enable GitHub Pages on a repository, GitHub takes the content that's on the main branch and publishes a website based on its contents.
-
-### :keyboard: Activity: Enable GitHub Pages
-
-1. Open a new browser tab, and work on the steps in your second tab while you read the instructions in this tab.
-1. Under your repository name, click **Settings**.
-1. Click **Pages** in the **Code and automation** section.
-1. Ensure "Deploy from a branch" is selected from the **Source** drop-down menu, and then select `main` from the **Branch** drop-down menu.
-1. Click the **Save** button.
-1. Wait about _one minute_ then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step.
-   > Turning on GitHub Pages creates a deployment of your repository. GitHub Actions may take up to a minute to respond while waiting for the deployment. Future steps will be about 20 seconds; this step is slower.
-   > **Note**: In the **Pages** of **Settings**, the **Visit site** button will appear at the top. Click the button to see your GitHub Pages site.
-
-<footer>
-
-<!--
-  <<< Author notes: Footer >>>
-  Add a link to get support, GitHub status page, code of conduct, license link.
--->
-
----
-
-Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/github-pages) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
-
-&copy; 2023 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
-
-</footer>
+## valores por defecto
+margin ``0`` y uso de box model en todo el documento html,
+algunas etiquetas tienen valores por defecto como color, altura, ancho,padding y margin para que una pagina pueda tener una opcion inicial de estilos
+> header
+este elemento tiene un ``width`` auto, el height minimo es de ``30px``, tiene un ``padding`` por defecto  de ``10px`` sin ``margin`` y un color #d00000ff 

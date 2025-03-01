@@ -1,0 +1,249 @@
+/*========initial adjustments=========*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /*para facilitar el uso de rem*/
+    font-size: 62.5%; /* 62.5% de 16px = 10px = 1rem*/
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+    background-color: #ffffffff;
+    color: #000000ff;
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+/*===========colours backgroud==============*/
+/*Most used colors and primary colours*/
+:root {
+    /*primary colours*/
+    --green: #00FF00ff;
+    --red: #FF0000ff;
+    --blue: #0000FFff;
+    /* neutral and timeless colors*/
+    --grey: #808080ff;
+    --white: #FFFFFFff;
+    --black: #000000ff;
+    /*other colours*/
+    --yellow: #FFFF00ff;
+}
+
+/*===========Default Settings============*/
+/*colors palette for default*/
+:root {
+    --one: #d00000ff;
+    /*header*/
+    --two: #240046;
+    /*nav*/
+    --three: #3c096c;
+    /*main*/
+    --four: #5a189a;
+    /*aside*/
+    --five: #7b2cbf;
+    /*footer*/
+    --six: #9d4edd;
+    /*input submit*/
+    --seven: #c77dff;
+    --eight: #e0aaff;
+}
+
+/*default settings estructure*/
+header {
+    background-color: var(--one);
+    width: auto;
+    min-height: 3rem;
+    padding: 1rem;
+}
+
+nav {
+    background-color: var(--two);
+}
+
+main {
+    background-color: var(--three);
+}
+
+aside {
+    background-color: var(--four);
+}
+
+footer {
+    background-color: var(--five);
+}
+
+/*default colours input submit background*/
+[type="submit"] {
+    background-color: var(--five);
+}
+
+
+/*primary colors backgroud*/
+.bg-green {
+    background-color: var(--green);
+}
+
+.bg-red {
+    background-color: var(--red);
+}
+
+.bg-blue {
+    background-color: var(--blue);
+}
+
+.bg-grey {
+    background-color: var(--grey);
+}
+
+.bg-white {
+    background-color: var(--white);
+}
+
+.bg-black {
+    background-color: var(--black);
+}
+
+.bg-yellow {
+    background-color: var(--yellow);
+}
+
+/*colours palette backgroud*/
+.bg-one {
+    background-color: var(--one);
+}
+
+.bg-two {
+    background-color: var(--two);
+}
+
+.bg-three {
+    background-color: var(--three);
+}
+
+.bg-four {
+    background-color: var(--four);
+}
+
+.bg-five {
+    background-color: var(--five);
+}
+
+.bg-six {
+    background-color: var(--six);
+}
+
+.bg-seven {
+    background-color: var(--seven);
+}
+
+.bg-eight {
+    background-color: var(--eight);
+}
+
+/*primary colours text*/
+.c-green {
+    color: var(--green);
+}
+
+.c-red {
+    color: var(--red);
+}
+
+.c-blue {
+    color: var(--blue);
+}
+
+.c-grey {
+    color: var(--grey);
+}
+
+.c-white {
+    color: var(--white);
+}
+
+.c-black {
+    color: var(--black);
+}
+
+.c-yellow {
+    color: var(--yellow);
+}
+
+/*colours palette text*/
+.c-one {
+    color: var(--one);
+}
+
+.c-two {
+    color: var(--two);
+}
+
+.c-three {
+    color: var(--three);
+}
+
+.c-four {
+    color: var(--four);
+}
+
+.c-five {
+    color: var(--five);
+}
+
+.c-six {
+    color: var(--six);
+}
+
+.c-seven {
+    color: var(--seven);
+}
+
+.c-eight {
+    color: var(--eight);
+}
+
+/*height y width*/
+.w-200 {
+    width: 20rem;
+}
+
+.w-300 {
+    width: 30rem;
+}
+
+.w-400 {
+    width: 40rem;
+}
+
+.w-auto {
+    width: auto;
+}
+
+.h-50 {
+    height: 5rem;
+}
+
+.h-100 {
+    height: 10rem;
+}
+
+.h-200 {
+    height: 20rem;
+}
+
+
+.h-auto {
+    height: auto;
+}
