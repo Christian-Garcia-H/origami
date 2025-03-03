@@ -50,28 +50,22 @@ body {
     --blue: #0000FFff;
     /* neutral and timeless colors*/
     --grey: #808080ff;
-    --white: #FFFFFFff;
+    --white: #ffffffff;
     --black: #000000ff;
     /*other colours*/
-    --yellow: #FFFF00ff;
+    --yellow: #ffff00ff;
 }
 
 /*colors palette for default*/
 :root {
     --one: #d00000ff;
-    /*header*/
-    --two: #9d0208ff;
-    /*nav*/
-    --three: #3c096c;
-    /*main*/
-    --four: #5a189a;
-    /*aside*/
-    --five: #7b2cbf;
-    /*footer*/
-    --six: #9d4edd;
-    /*input submit*/
-    --seven: #c77dff;
-    --eight: #e0aaff;
+    --two: #fca311ff;
+    --three: #6a040fff;
+    --four: #6b705cff;
+    --five: #e5e5e5ff;
+    --six: #42a5f5ff;
+    --seven: #1976d2ff;
+    --eight: #f4d58dff;
 }
 
 /*primary colors backgroud*/
@@ -202,6 +196,7 @@ body {
 .w-20 {
     width: 2rem;
 }
+
 .w-200 {
     width: 20rem;
 }
@@ -221,6 +216,7 @@ body {
 .h-20 {
     height: 2rem;
 }
+
 .h-50 {
     height: 5rem;
 }
@@ -232,6 +228,7 @@ body {
 .h-200 {
     height: 20rem;
 }
+
 
 .h-auto {
     height: auto;
@@ -278,18 +275,325 @@ body {
     font-size: 5.5rem;
 }
 
-/*padding y margin*/
+/*padding*/
+/* Padding General */
+.p-1 {
+    padding: 0.4rem;
+}
+
+/* 4px */
+.p-2 {
+    padding: 0.8rem;
+}
+
+/* 8px */
+.p-3 {
+    padding: 1.2rem;
+}
+
+/* 12px */
+.p-4 {
+    padding: 1.6rem;
+}
+
+/* 16px */
+.p-5 {
+    padding: 2rem;
+}
+
+/* 20px */
+.p-6 {
+    padding: 2.4rem;
+}
+
+/* 24px */
+.p-7 {
+    padding: 3.2rem;
+}
+
+/* 32px */
+.p-8 {
+    padding: 4rem;
+}
+
+/* 40px */
+.p-9 {
+    padding: 4.8rem;
+}
+
+/* 48px */
 .p-10 {
-    padding: 1rem;
+    padding: 6.4rem;
 }
 
-.p-15 {
-    padding: 1.5rem;
+/* 64px */
+/* Padding Top */
+.pt-1 {
+    padding-top: 0.4rem;
 }
 
-.p-30 {
-    padding: 3rem;
+.pt-2 {
+    padding-top: 0.8rem;
 }
+
+.pt-3 {
+    padding-top: 1.2rem;
+}
+
+.pt-4 {
+    padding-top: 1.6rem;
+}
+
+.pt-5 {
+    padding-top: 2rem;
+}
+
+.pt-6 {
+    padding-top: 2.4rem;
+}
+
+.pt-7 {
+    padding-top: 3.2rem;
+}
+
+.pt-8 {
+    padding-top: 4rem;
+}
+
+.pt-9 {
+    padding-top: 4.8rem;
+}
+
+.pt-10 {
+    padding-top: 6.4rem;
+}
+
+/* Padding Bottom */
+.pb-1 {
+    padding-bottom: 0.4rem;
+}
+
+.pb-2 {
+    padding-bottom: 0.8rem;
+}
+
+.pb-3 {
+    padding-bottom: 1.2rem;
+}
+
+.pb-4 {
+    padding-bottom: 1.6rem;
+}
+
+.pb-5 {
+    padding-bottom: 2rem;
+}
+
+.pb-6 {
+    padding-bottom: 2.4rem;
+}
+
+.pb-7 {
+    padding-bottom: 3.2rem;
+}
+
+.pb-8 {
+    padding-bottom: 4rem;
+}
+
+.pb-9 {
+    padding-bottom: 4.8rem;
+}
+
+.pb-10 {
+    padding-bottom: 6.4rem;
+}
+
+/* Padding Left */
+.pl-1 {
+    padding-left: 0.4rem;
+}
+
+.pl-2 {
+    padding-left: 0.8rem;
+}
+
+.pl-3 {
+    padding-left: 1.2rem;
+}
+
+.pl-4 {
+    padding-left: 1.6rem;
+}
+
+.pl-5 {
+    padding-left: 2rem;
+}
+
+.pl-6 {
+    padding-left: 2.4rem;
+}
+
+.pl-7 {
+    padding-left: 3.2rem;
+}
+
+.pl-8 {
+    padding-left: 4rem;
+}
+
+.pl-9 {
+    padding-left: 4.8rem;
+}
+
+.pl-10 {
+    padding-left: 6.4rem;
+}
+
+/* Padding Right */
+.pr-1 {
+    padding-right: 0.4rem;
+}
+
+.pr-2 {
+    padding-right: 0.8rem;
+}
+
+.pr-3 {
+    padding-right: 1.2rem;
+}
+
+.pr-4 {
+    padding-right: 1.6rem;
+}
+
+.pr-5 {
+    padding-right: 2rem;
+}
+
+.pr-6 {
+    padding-right: 2.4rem;
+}
+
+.pr-7 {
+    padding-right: 3.2rem;
+}
+
+.pr-8 {
+    padding-right: 4rem;
+}
+
+.pr-9 {
+    padding-right: 4.8rem;
+}
+
+.pr-10 {
+    padding-right: 6.4rem;
+}
+
+/* Padding X (Left & Right) */
+.px-1 {
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+}
+
+.px-2 {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+}
+
+.px-3 {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+}
+
+.px-4 {
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+}
+
+.px-5 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.px-6 {
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+}
+
+.px-7 {
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+}
+
+.px-8 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.px-9 {
+    padding-left: 4.8rem;
+    padding-right: 4.8rem;
+}
+
+.px-10 {
+    padding-left: 6.4rem;
+    padding-right: 6.4rem;
+}
+
+/* Padding Y (Top & Bottom) */
+.py-1 {
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+
+.py-2 {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+.py-3 {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+}
+
+.py-4 {
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+}
+
+.py-5 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.py-6 {
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+}
+
+.py-7 {
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+}
+
+.py-8 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.py-9 {
+    padding-top: 4.8rem;
+    padding-bottom: 4.8rem;
+}
+
+.py-10 {
+    padding-top: 6.4rem;
+    padding-bottom: 6.4rem;
+}
+
+
 /*margin*/
 .ml-10 {
     margin-left: 1rem;
@@ -336,7 +640,24 @@ body {
 }
 
 .m-auto {
-    margin: auto;
+    margin-bottom: auto;
+}
+
+
+.mb-10 {
+    margin-bottom: 1rem;
+}
+
+.mb-15 {
+    margin-bottom: 1.5rem;
+}
+
+.mb-30 {
+    margin-bottom: 3rem;
+}
+
+.mb-auto {
+    margin-bottom: auto;
 }
 
 /*alinear texto*/
@@ -352,10 +673,22 @@ body {
     text-align: left;
 }
 
-.b-inferior {
+.b-b {
     border-bottom: 0.1rem solid var(--grey);
 }
 
-.t-dn{
+.b-l {
+    border-left: 0.1rem solid var(--grey);
+}
+
+.b-r {
+    border-right: 0.1rem solid var(--grey);
+}
+
+.b-t {
+    border-top: 0.1rem solid var(--grey);
+}
+
+.t-dn {
     text-decoration: none;
 }
