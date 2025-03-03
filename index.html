@@ -11,7 +11,7 @@
             --two: #fca311ff;
             --three: #6a040fff;
             --four: #6b705cff;
-            --five: #90caf9ff;
+            --five: #e5e5e5ff;
             --six: #42a5f5ff;
             --seven: #1976d2ff;
             --eight: #f4d58dff;
@@ -39,6 +39,15 @@
         code {
             font-family: "Fira Code", monospace;
         }
+
+        ul {
+            list-style-type: disc;
+            list-style-position: inside;
+        }
+
+        ol {
+            list-style-type: decimal;
+        }
     </style>
     <title>Document</title>
 </head>
@@ -48,61 +57,70 @@
         <h1 class="c-two fs-40">Origami</h1>
         <p class="fs-20 c-white">La libreria de css que facilita tu trabajo</p>
     </header>
-    <nav>
-        <a href="#seccion1">click aqui</a>
-        <a href="#seccion2">click aqui</a>
-        <a href="#seccion3">click aqui</a>
-        <a href="#seccion4">click aqui</a>
-    </nav>
     <main class="fs-20 krub-regular">
-        <div id="seccion1" class="h-auto b-inferior">
-            <section class="p-30">
+        <div id="seccion1" class="h-auto b-b">
+            <section class="p-7">
                 <h2 class="t-align-l fs-20 krub-bold c-one">¿Qué puedes hacer con la librería Origami?</h2>
-                <div class="flex">
-                    <p>
-                        Esta biblioteca de CSS ha sido diseñada para acelerar el desarrollo web mediante un sistema de
-                        <a href="#clases utilitarias" class="c-three krub-bold t-dn">clases utilitarias</a> que permiten
-                        aplicar estilos
-                        directamente en el código HTML de manera rápida
-                        y eficiente. Su estructura modular optimiza la gestión de propiedades como márgenes, espaciados,
-                        tipografía, colores y alineación, reduciendo el tiempo de desarrollo sin sacrificar la calidad
-                        del diseño.<br><br>
-                        A diferencia de otras soluciones que abstraen por completo la escritura de estilos, esta
-                        biblioteca permite al desarrollador mantener y fortalecer sus habilidades de CSS, ya que la
-                        personalización avanzada se logra a través de hojas de estilo adicionales. Gracias a esta
-                        combinación, el desarrollador tiene control total sobre la apariencia del proyecto, integrando
-                        <a href="#" class="c-three krub-bold t-dn">paletas de colores personalizadas</a>, <a href="#"
-                            class="c-three krub-bold t-dn">fuentes tipográficas</a>y otros ajustes específicos que se
-                        adapten a la identidad del proyecto.
-                    </p>
-                    <img class="w- h-auto m-15" src="origami_fin.svg">
-                </div>
+                <p>
+                    Esta biblioteca de CSS ha sido diseñada para acelerar el desarrollo web mediante un sistema de
+                    <a href="#clases utilitarias" class="c-three krub-bold t-dn">clases utilitarias</a> que permiten
+                    aplicar estilos
+                    directamente en el código HTML de manera rápida
+                    y eficiente. Su estructura modular optimiza la gestión de propiedades como márgenes, espaciados,
+                    tipografía, colores y alineación, reduciendo el tiempo de desarrollo sin sacrificar la calidad
+                    del diseño.<br><br>
+                    A diferencia de otras soluciones que abstraen por completo la escritura de estilos, esta
+                    biblioteca permite al desarrollador mantener y fortalecer sus habilidades de CSS, ya que la
+                    personalización avanzada se logra a través de hojas de estilo adicionales. Gracias a esta
+                    combinación, el desarrollador tiene control total sobre la apariencia del proyecto, integrando
+                    <a href="#" class="c-three krub-bold t-dn">paletas de colores personalizadas</a>, <a href="#"
+                        class="c-three krub-bold t-dn">fuentes tipográficas</a>y otros ajustes específicos que se
+                    adapten a la identidad del proyecto.
+                </p>
             </section>
         </div>
-        <div id="seccion2" class="h-auto b-inferior">
-            <section class="p-30">
+        <div id="seccion2" class="h-auto b-b">
+            <section class="p-7">
                 <h2 class="t-align-l fs-20 krub-bold">Menú</h2>
                 <ol>
-                    <li><a class="c-three t-dn krub-bold" href="#colores">Colores</a></li>
-                    <li>Segundo elemento</li>
+                    <li><a class="c-three t-dn krub-bold" href="#colores">Colores</a>
+                        <ul>
+                            <li><a class="c-black t-dn krub-bold" href="#colores primarios">Colores primarios</a></li>
+                            <li><a class="c-black t-dn krub-bold" href="#colores neutros">Colores neutros</a></li>
+                            <li><a class="c-black t-dn krub-bold" href="#otros colores">Otros colores</a></li>
+                            <li><a class="c-black t-dn krub-bold" href="#colores personalizados">Colores
+                                    personalizados</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="c-three t-dn krub-bold" href="#box model">Box model</a>
+                        <ul>
+                            <li><a class="c-black t-dn krub-bold" href="#padding">padding</a></li>
+                            <li><a class="c-black t-dn krub-bold" href="#margin">margin</a></li>
+                            <li><a class="c-black t-dn krub-bold" href="#border">border</a></li>
+                            <li><a class="c-black t-dn krub-bold" href="#height">height</a></li>
+                            <li><a class="c-black t-dn krub-bold" href="#width">width</a></li>
+
+                        </ul>
+                    </li>
                     <li>Tercer elemento</li>
                 </ol>
             </section>
         </div>
-        <div id="seccion3" class="h-auto b-inferior">
-            <section class="p-30">
-                <h2 class="t-align-l fs-20 krub-bold">Colores</h2>
+        <div id="seccion3" class="h-auto b-b">
+            <!--seccion de colores-->
+            <section class="p-7">
+                <h2 id="colores" class="t-align-l fs-20 krub-bold">Colores</h2>
                 <p>Todos los colores de esta librería y los colores personalizados se pueden usar tanto para background
                     como para color de texto. Una forma fácil de identificarlos es que las clases que empiezan con la
                     letra c corresponden a color de texto y las que empiezan con bg corresponden a background.</p>
-                    <p class="c-two">Ejemplo:</p>
-                    <p>para color de fondo azul:</p>
-                    <pre><code> <span class="c-green">bg</span>-blue </code></pre>
-                    <p>para color de texto azul:</p>
-                    <pre><code> <span class="c-green">c</span>-blue </code></pre>
-                <h3 id="colores" class="c-two">Colores primarios</h3>
+                <p class="c-two">Ejemplo:</p>
+                <p>para color de fondo azul:</p>
+                <pre><code> <span class="c-green">bg</span>-blue </code></pre>
+                <p>para color de texto azul:</p>
+                <pre><code> <span class="c-green">c</span>-blue </code></pre>
+                <h3 id="colores primarios" class="c-two">Colores primarios</h3>
                 <p>Los colores primarios disponibles son tres:</p>
-                <!--muestra de color junto a codigo hex-->
+                <!--muestra de color junto a codigo hex colores primarios-->
                 <div class="flex align">
                     <div class="w-20 h-20 bg-blue mr-10">
                     </div>
@@ -125,11 +143,113 @@
                     </p>
                 </div>
                 <p>Estos colores se pueden usar con las clases utilitarias:</p>
-                <pre><code> bg-blue bg-green bg-red </code></pre>
+                <pre class="mb-15"><code> bg-blue bg-green bg-red </code></pre>
+                <h3 id="colores neutros" class="c-two">Colores neutros</h3>
+                <p>Tambien tiene tres colores neutros:</p>
+                <!--muestra de color junto a codigo hex colores neutros-->
+                <div class="flex align">
+                    <div class="w-20 h-20 bg-black mr-10">
+                    </div>
+                    <p class="c-four">
+                        #000000ff
+                    </p>
+                </div>
+                <div class="flex align">
+                    <div class="w-20 h-20 bg-grey mr-10">
+                    </div>
+                    <p class="c-four">
+                        #808080ff
+                    </p>
+                </div>
+                <div class="flex align">
+                    <div class="w-20 h-20 bg-white mr-10">
+                    </div>
+                    <p class="c-four">
+                        #ffffffff
+                    </p>
+                </div>
+                <p>Estos colores se pueden usar con las clases utilitarias:</p>
+                <pre class="mb-15"><code> bg-black bg-grey bg-white </code></pre>
+                <h3 id="otros colores" class="c-two">Otros colores</h3>
+                <!--muestra de color junto a codigo hex de otros colores-->
+                <p>Hay una línea de otros colores que también son muy útiles: </p>
+                <div class="flex align">
+                    <div class="w-20 h-20 bg-yellow mr-10">
+                    </div>
+                    <p class="c-four">
+                        #ffff00ff
+                    </p>
+                </div>
+                <pre class="mb-15"><code> bg-yellow </code></pre>
+                <h3 id="colores personalizados" class="c-two">Colores personalizados</h3>
+                <p>En total la <a href="#version" class="t-dn c-three krub-bold">versión 1.1</a> de esta librería tiene
+                    7 colores básicos integrados, pero se pueden añadir 8
+                    colores mas por medio de un archivo CSS adicional en el cual se defina una paleta de colores
+                    personalizada con la siguiente sintaxis: </p>
+
+                <pre class="mb-15"><code> :root {
+                        --one: #d00000ff;
+                        --two: #fca311ff;
+                        --three: #6a040fff;
+                        --four: #6b705cff;
+                        --five: #90caf9ff;
+                        --six: #42a5f5ff;
+                        --seven: #1976d2ff;
+                        --eight: #f4d58dff;
+                    } </code></pre>
+                <p>A estos colores puedes acceder fácilmente usando las clases utilitarias desde tu documento HTML:</p>
+                <pre
+                    class="mb-15"><code> bg-<span class="c-green">one</span> bg-<span class="c-green">two</span> bg-<span class="c-green">three</span> ....</code></pre>
+                <div class="h-auto w-auto bg-five b-b">
+                    <p class="p-15 c-grey">Para utilizar colores personalizados, asegúrate de vincular tu archivo CSS al
+                        documento HTML
+                        después de importar la librería Origami. Si lo vinculas antes, solo se aplicarán los colores
+                        predeterminados de la librería.</p>
+                </div>
             </section>
         </div>
-        <div id="seccion4" class="h-auto b-inferior">
-            <section class="p-30">
+        <div id="box model" class="h-auto b-b">
+            <!--seccion de box model-->
+            <section class="p-7">
+                <h2 class="t-align-l fs-20 krub-bold">Box model</h2>
+                <h3 id="clases utilitarias" class="c-two">¿Qué ofrece esta libreria?</h3>
+                <p>Esta librería CSS está diseñada para optimizar el desarrollo web mediante el uso de box-sizing:
+                    border-box;, asegurando que el tamaño de los elementos se mantenga consistente al incluir bordes y
+                    relleno dentro de sus dimensiones definidas.
+
+                    Además, ofrece un conjunto de utilidades para aplicar de forma rápida y eficiente <a href="#border"
+                        class="c-three krub-bold t-dn">bordes</a>, <a href="#margin"
+                        class="c-three krub-bold t-dn">márgenes</a>,<a href="#padding"
+                        class="c-three krub-bold t-dn">padding</a>, así como ajustes de
+                    <a href="#width" class="c-three krub-bold t-dn">width</a> y <a href="#height"
+                        class="c-three krub-bold t-dn">height</a>, permitiendo un diseño más
+                    flexible y estructurado.
+                </p>
+                <h3 id="padding" class="c-two">padding</h3>
+                <p>Con clases predefinidas, es posible aplicar distintos niveles de padding de forma flexible,
+                    adaptándose a las necesidades de diseño y optimizando el flujo de trabajo en el desarrollo web.</p>
+                <p>Cada clase sigue una escala progresiva, utilizando valores en rem para mantener accesibilidad y
+                    flexibilidad en cualquier resolución de pantalla.</p>
+                <h4 class="c-two">Clases Generales (p-*)</h4>
+                <p>Las clases de padding generales aplican el mismo espaciado en todos los lados del elemento:</p>
+                <pre class="mb-15"><code>&lt;div class="p-3"&gt;Contenido con padding uniforme&lt;/div&gt;</code></pre>
+                <p>Tenemos opciones desde p-1 hasta p-10 lo que permite ajustar el padding desde 4px hasta 64px en una escala progresiva.</p>
+                <h4 class="c-two"> Clases Direccionales (pt-*, pb-*, pl-*, pr-*)</h4>
+                <p>Puedes usar la dirección en la que se aplicara el padding junto a la proporción de padding antes descrita pt-* (arriba), pb-* (abajo), pl-* (izquierda) y pr-* (derecha).</p>
+                <p class="c-two">Ejemplo padding a todas las direcciones:</p>
+                <pre class="mb-15"><code></code> p-1 p-2 p-3 ... p-10</pre>
+                <p class="c-two">Ejemplo padding top:</p>
+                <pre class="mb-15"><code></code> pt-1 pt-2 pt-3 ... pt-10</pre>
+                <p class="c-two">Ejemplo padding bottom:</p>
+                <pre class="mb-15"><code></code> pb-1 pb-2 pb-3 ... pb-10</pre>
+                <p class="c-two">Ejemplo padding left:</p>
+                <pre class="mb-15"><code></code> pl-1 pl-2 pl-3 ... pl-10</pre>
+                <p class="c-two">Ejemplo padding rigth:</p>
+                <pre class="mb-15"><code></code> pr-1 pr-2 pr-3 ... pr-10</pre>
+            </section>
+        </div>
+        <div id="seccion4" class="h-auto b-b">
+            <section class="p-7">
                 <h2 class="t-align-l fs-20 krub-bold">Diccionario de términos</h2>
                 <h3 id="clases utilitarias" class="c-two">¿Qué es una clase utilitaria?</h3>
                 <p>
@@ -147,7 +267,9 @@
                 <pre><code>bg-yellow</code></pre>
                 <p>y esto hará referencia a esta clase de la librería, de esta forma ahorraremos tiempo al escribir
                     Código</p>
-                <pre><code> .bg-yellow {background-color: var(--yellow);}</code></pre>
+                <pre><code> .bg-yellow {
+                    background-color: var(--yellow);
+                }</code></pre>
 
 
             </section>
