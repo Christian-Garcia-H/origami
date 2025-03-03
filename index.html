@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Origami.css">
+    <style>
+        :root {
+            --one: #d00000ff;
+            --two: #fca311ff;
+            --three: #6a040fff;
+            --four: #6b705cff;
+            --five: #90caf9ff;
+            --six: #42a5f5ff;
+            --seven: #1976d2ff;
+            --eight: #f4d58dff;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .align {
+            align-items: center;
+        }
+
+        pre {
+            background-color: #282c34;
+            color: #abb2bf;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: "Fira Code", monospace;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            border-left: 5px solid var(--two);
+        }
+
+        code {
+            font-family: "Fira Code", monospace;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="bg-one w-auto min-h-50 t-align-c">
+        <h1 class="c-two fs-40">Origami</h1>
+        <p class="fs-20 c-white">La libreria de css que facilita tu trabajo</p>
+    </header>
+    <nav>
+        <a href="#seccion1">click aqui</a>
+        <a href="#seccion2">click aqui</a>
+        <a href="#seccion3">click aqui</a>
+        <a href="#seccion4">click aqui</a>
+    </nav>
+    <main class="fs-20 krub-regular">
+        <div id="seccion1" class="h-auto b-inferior">
+            <section class="p-30">
+                <h2 class="t-align-l fs-20 krub-bold c-one">¿Qué puedes hacer con la librería Origami?</h2>
+                <div class="flex">
+                    <p>
+                        Esta biblioteca de CSS ha sido diseñada para acelerar el desarrollo web mediante un sistema de
+                        <a href="#clases utilitarias" class="c-three krub-bold t-dn">clases utilitarias</a> que permiten
+                        aplicar estilos
+                        directamente en el código HTML de manera rápida
+                        y eficiente. Su estructura modular optimiza la gestión de propiedades como márgenes, espaciados,
+                        tipografía, colores y alineación, reduciendo el tiempo de desarrollo sin sacrificar la calidad
+                        del diseño.<br><br>
+                        A diferencia de otras soluciones que abstraen por completo la escritura de estilos, esta
+                        biblioteca permite al desarrollador mantener y fortalecer sus habilidades de CSS, ya que la
+                        personalización avanzada se logra a través de hojas de estilo adicionales. Gracias a esta
+                        combinación, el desarrollador tiene control total sobre la apariencia del proyecto, integrando
+                        <a href="#" class="c-three krub-bold t-dn">paletas de colores personalizadas</a>, <a href="#"
+                            class="c-three krub-bold t-dn">fuentes tipográficas</a>y otros ajustes específicos que se
+                        adapten a la identidad del proyecto.
+                    </p>
+                    <img class="w- h-auto m-15" src="origami_fin.svg">
+                </div>
+            </section>
+        </div>
+        <div id="seccion2" class="h-auto b-inferior">
+            <section class="p-30">
+                <h2 class="t-align-l fs-20 krub-bold">Menú</h2>
+                <ol>
+                    <li><a class="c-three t-dn krub-bold" href="#colores">Colores</a></li>
+                    <li>Segundo elemento</li>
+                    <li>Tercer elemento</li>
+                </ol>
+            </section>
+        </div>
+        <div id="seccion3" class="h-auto b-inferior">
+            <section class="p-30">
+                <h2 class="t-align-l fs-20 krub-bold">Colores</h2>
+                <p>Todos los colores de esta librería y los colores personalizados se pueden usar tanto para background
+                    como para color de texto. Una forma fácil de identificarlos es que las clases que empiezan con la
+                    letra c corresponden a color de texto y las que empiezan con bg corresponden a background.</p>
+                    <p class="c-two">Ejemplo:</p>
+                    <p>para color de fondo azul:</p>
+                    <pre><code> <span class="c-green">bg</span>-blue </code></pre>
+                    <p>para color de texto azul:</p>
+                    <pre><code> <span class="c-green">c</span>-blue </code></pre>
+                <h3 id="colores" class="c-two">Colores primarios</h3>
+                <p>Los colores primarios disponibles son tres:</p>
+                <!--muestra de color junto a codigo hex-->
+                <div class="flex align">
+                    <div class="w-20 h-20 bg-blue mr-10">
+                    </div>
+                    <p class="c-four">
+                        #0000ffff
+                    </p>
+                </div>
+                <div class="flex align">
+                    <div class="w-20 h-20 bg-green mr-10">
+                    </div>
+                    <p class="c-four">
+                        #00ff00ff
+                    </p>
+                </div>
+                <div class="flex align">
+                    <div class="w-20 h-20 bg-red mr-10">
+                    </div>
+                    <p class="c-four">
+                        #ff0000ff
+                    </p>
+                </div>
+                <p>Estos colores se pueden usar con las clases utilitarias:</p>
+                <pre><code> bg-blue bg-green bg-red </code></pre>
+            </section>
+        </div>
+        <div id="seccion4" class="h-auto b-inferior">
+            <section class="p-30">
+                <h2 class="t-align-l fs-20 krub-bold">Diccionario de términos</h2>
+                <h3 id="clases utilitarias" class="c-two">¿Qué es una clase utilitaria?</h3>
+                <p>
+                    Una clase utilitaria en CSS es una clase predefinida con una única responsabilidad: aplicar un
+                    estilo específico a un elemento sin necesidad de escribir CSS adicional. Estas clases permiten
+                    modificar rápidamente propiedades como márgenes, colores, tipografía, alineaciones y más,
+                    directamente en el código HTML.
+
+                    A diferencia de las clases tradicionales, que agrupan múltiples estilos dentro de una misma regla,
+                    las clases utilitarias están diseñadas para ser pequeñas, modulares y reutilizables, lo que facilita
+                    la creación de interfaces de manera eficiente y consistente.
+                </p>
+                <p class="c-two">Ejemplo:</p>
+                <p>podemos usar la siguiente clase utilitaria dentro de nuestro Código HTML</p>
+                <pre><code>bg-yellow</code></pre>
+                <p>y esto hará referencia a esta clase de la librería, de esta forma ahorraremos tiempo al escribir
+                    Código</p>
+                <pre><code> .bg-yellow {background-color: var(--yellow);}</code></pre>
+
+
+            </section>
+        </div>
+    </main>
+    <footer class="c-white bg-one p-15 t-align-c krub-regular">
+        <p class="fs-20">
+            Todos los derechos reservados - Christian Samuel Garcia
+        </p>
+        <p class="fs-30">
+            origami
+        </p>
+    </footer>
+</body>
+
+</html>
