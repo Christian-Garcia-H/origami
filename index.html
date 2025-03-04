@@ -4,52 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="Origami.css" as="style">
     <link rel="stylesheet" href="Origami.css">
-    <style>
-        :root {
-            --one: #d00000ff;
-            --two: #fca311ff;
-            --three: #6a040fff;
-            --four: #6b705cff;
-            --five: #e5e5e5ff;
-            --six: #42a5f5ff;
-            --seven: #1976d2ff;
-            --eight: #f4d58dff;
-        }
+    <link rel="preload" href="style.css" as="style">
+    <link href="style.css" rel="stylesheet">
 
-        .flex {
-            display: flex;
-        }
-
-        .align {
-            align-items: center;
-        }
-
-        pre {
-            background-color: #282c34;
-            color: #abb2bf;
-            padding: 15px;
-            border-radius: 8px;
-            font-family: "Fira Code", monospace;
-            overflow-x: auto;
-            white-space: pre-wrap;
-            border-left: 5px solid var(--two);
-        }
-
-        code {
-            font-family: "Fira Code", monospace;
-        }
-
-        ul {
-            list-style-type: disc;
-            list-style-position: inside;
-        }
-
-        ol {
-            list-style-type: decimal;
-        }
-    </style>
-    <title>Document</title>
+    <title>Origami</title>
 </head>
 
 <body>
@@ -73,10 +33,19 @@
                     biblioteca permite al desarrollador mantener y fortalecer sus habilidades de CSS, ya que la
                     personalización avanzada se logra a través de hojas de estilo adicionales. Gracias a esta
                     combinación, el desarrollador tiene control total sobre la apariencia del proyecto, integrando
-                    <a href="#" class="c-three krub-bold t-dn">paletas de colores personalizadas</a>, <a href="#"
-                        class="c-three krub-bold t-dn">fuentes tipográficas</a>y otros ajustes específicos que se
+                    <a href="#colores personalizados" class="c-three krub-bold t-dn">paletas de colores
+                        personalizadas</a>, <a href="#fuentes" class="c-three krub-bold t-dn">fuentes tipográficas</a>y
+                    otros ajustes específicos que se
                     adapten a la identidad del proyecto.
+
                 </p>
+                <div class="h-auto w-auto bg-five b-b b-four mt-4">
+                    <p class="p-5 c-grey">Para usar la librería Origami en tu proyecto, incluye el siguiente código en
+                        la sección <code>&lt;head&gt;</code> de tu archivo HTML.</p>
+                </div>
+                <div class="mt-4">
+                    <pre><code> &lt;link rel="stylesheet" href="https://christian-garcia-h.github.io/origami/Origami.css"&gt;</code></pre>
+                </div>
             </section>
         </div>
         <div id="seccion2" class="h-auto b-b">
@@ -96,13 +65,18 @@
                         <ul>
                             <li><a class="c-black t-dn krub-bold" href="#padding">padding</a></li>
                             <li><a class="c-black t-dn krub-bold" href="#margin">margin</a></li>
-                            <li><a class="c-black t-dn krub-bold" href="#border">border</a></li>
-                            <li><a class="c-black t-dn krub-bold" href="#height">height</a></li>
                             <li><a class="c-black t-dn krub-bold" href="#width">width</a></li>
+                            <li><a class="c-black t-dn krub-bold" href="#height">height</a></li>
+                            <li><a class="c-black t-dn krub-bold" href="#border">border</a></li>
 
                         </ul>
                     </li>
-                    <li>Tercer elemento</li>
+                    <li><a class="c-three t-dn krub-bold" href="#fonts">Fonts</a>
+                        <ul>
+                            <li><a class="c-black t-dn krub-bold" href="#tamaño de fuente">Tamaño de fuente</a></li>
+                            <li><a class="c-black t-dn krub-bold" href="#fuentes">Fuente disponible</a></li>
+                        </ul>
+                    </li>
                 </ol>
             </section>
         </div>
@@ -122,72 +96,72 @@
                 <p>Los colores primarios disponibles son tres:</p>
                 <!--muestra de color junto a codigo hex colores primarios-->
                 <div class="flex align">
-                    <div class="w-20 h-20 bg-blue mr-10">
+                    <div class="w-5 h-5 bg-blue mr-2">
                     </div>
                     <p class="c-four">
                         #0000ffff
                     </p>
                 </div>
                 <div class="flex align">
-                    <div class="w-20 h-20 bg-green mr-10">
+                    <div class="w-5 h-5 bg-green mr-2">
                     </div>
                     <p class="c-four">
                         #00ff00ff
                     </p>
                 </div>
                 <div class="flex align">
-                    <div class="w-20 h-20 bg-red mr-10">
+                    <div class="w-5 h-5 bg-red mr-2">
                     </div>
                     <p class="c-four">
                         #ff0000ff
                     </p>
                 </div>
                 <p>Estos colores se pueden usar con las clases utilitarias:</p>
-                <pre class="mb-15"><code> bg-blue bg-green bg-red </code></pre>
+                <pre class="mb-4"><code> bg-blue bg-green bg-red </code></pre>
                 <h3 id="colores neutros" class="c-two">Colores neutros</h3>
                 <p>Tambien tiene tres colores neutros:</p>
                 <!--muestra de color junto a codigo hex colores neutros-->
                 <div class="flex align">
-                    <div class="w-20 h-20 bg-black mr-10">
+                    <div class="w-5 h-5 bg-black mr-2">
                     </div>
                     <p class="c-four">
                         #000000ff
                     </p>
                 </div>
                 <div class="flex align">
-                    <div class="w-20 h-20 bg-grey mr-10">
+                    <div class="w-5 h-5 bg-grey mr-2">
                     </div>
                     <p class="c-four">
                         #808080ff
                     </p>
                 </div>
                 <div class="flex align">
-                    <div class="w-20 h-20 bg-white mr-10">
+                    <div class="w-5 h-5 bg-white mr-2">
                     </div>
                     <p class="c-four">
                         #ffffffff
                     </p>
                 </div>
                 <p>Estos colores se pueden usar con las clases utilitarias:</p>
-                <pre class="mb-15"><code> bg-black bg-grey bg-white </code></pre>
+                <pre class="mb-4"><code> bg-black bg-grey bg-white </code></pre>
                 <h3 id="otros colores" class="c-two">Otros colores</h3>
                 <!--muestra de color junto a codigo hex de otros colores-->
                 <p>Hay una línea de otros colores que también son muy útiles: </p>
                 <div class="flex align">
-                    <div class="w-20 h-20 bg-yellow mr-10">
+                    <div class="w-5 h-5 bg-yellow mr-2">
                     </div>
                     <p class="c-four">
                         #ffff00ff
                     </p>
                 </div>
-                <pre class="mb-15"><code> bg-yellow </code></pre>
+                <pre class="mb-4"><code> bg-yellow </code></pre>
                 <h3 id="colores personalizados" class="c-two">Colores personalizados</h3>
                 <p>En total la <a href="#version" class="t-dn c-three krub-bold">versión 1.1</a> de esta librería tiene
                     7 colores básicos integrados, pero se pueden añadir 8
                     colores mas por medio de un archivo CSS adicional en el cual se defina una paleta de colores
                     personalizada con la siguiente sintaxis: </p>
 
-                <pre class="mb-15"><code> :root {
+                <pre class="mb-4"><code> :root {
                         --one: #d00000ff;
                         --two: #fca311ff;
                         --three: #6a040fff;
@@ -199,9 +173,9 @@
                     } </code></pre>
                 <p>A estos colores puedes acceder fácilmente usando las clases utilitarias desde tu documento HTML:</p>
                 <pre
-                    class="mb-15"><code> bg-<span class="c-green">one</span> bg-<span class="c-green">two</span> bg-<span class="c-green">three</span> ....</code></pre>
-                <div class="h-auto w-auto bg-five b-b">
-                    <p class="p-15 c-grey">Para utilizar colores personalizados, asegúrate de vincular tu archivo CSS al
+                    class="mb-4"><code> bg-<span class="c-green">one</span> bg-<span class="c-green">two</span> bg-<span class="c-green">three</span> ....</code></pre>
+                <div class="h-auto w-auto bg-five b-b b-four">
+                    <p class="p-5 c-grey">Para utilizar colores personalizados, asegúrate de vincular tu archivo CSS al
                         documento HTML
                         después de importar la librería Origami. Si lo vinculas antes, solo se aplicarán los colores
                         predeterminados de la librería.</p>
@@ -212,7 +186,7 @@
             <!--seccion de box model-->
             <section class="p-7">
                 <h2 class="t-align-l fs-20 krub-bold">Box model</h2>
-                <h3 id="clases utilitarias" class="c-two">¿Qué ofrece esta libreria?</h3>
+                <h3 class="c-two">¿Qué ofrece esta libreria?</h3>
                 <p>Esta librería CSS está diseñada para optimizar el desarrollo web mediante el uso de box-sizing:
                     border-box;, asegurando que el tamaño de los elementos se mantenga consistente al incluir bordes y
                     relleno dentro de sus dimensiones definidas.
@@ -225,6 +199,7 @@
                         class="c-three krub-bold t-dn">height</a>, permitiendo un diseño más
                     flexible y estructurado.
                 </p>
+                <!--uso de la clase padding-->
                 <h3 id="padding" class="c-two">padding</h3>
                 <p>Con clases predefinidas, es posible aplicar distintos niveles de padding de forma flexible,
                     adaptándose a las necesidades de diseño y optimizando el flujo de trabajo en el desarrollo web.</p>
@@ -232,25 +207,260 @@
                     flexibilidad en cualquier resolución de pantalla.</p>
                 <h4 class="c-two">Clases Generales (p-*)</h4>
                 <p>Las clases de padding generales aplican el mismo espaciado en todos los lados del elemento:</p>
-                <pre class="mb-15"><code>&lt;div class="p-3"&gt;Contenido con padding uniforme&lt;/div&gt;</code></pre>
-                <p>Tenemos opciones desde p-1 hasta p-10 lo que permite ajustar el padding desde 4px hasta 64px en una escala progresiva.</p>
-                <h4 class="c-two"> Clases Direccionales (pt-*, pb-*, pl-*, pr-*)</h4>
-                <p>Puedes usar la dirección en la que se aplicara el padding junto a la proporción de padding antes descrita pt-* (arriba), pb-* (abajo), pl-* (izquierda) y pr-* (derecha).</p>
+                <pre class="mb-4"><code>&lt;div class="p-3"&gt;Contenido con padding uniforme&lt;/div&gt;</code></pre>
+                <p>Tenemos opciones desde p-1 hasta p-16 lo que permite ajustar el padding desde 4px hasta 64px en una
+                    escala progresiva.</p>
+                <h4 class="c-two"> Clases Direccionales (pt-*, pb-*, pl-*, pr-*, px-*, py-*)</h4>
+                <p>Puedes usar la dirección en la que se aplicara el padding junto a la proporción de padding antes
+                    descrita pt-* (arriba), pb-* (abajo), pl-* (izquierda), pr-* (derecha), px-* (horizontal) y py-*
+                    (vertical).</p>
                 <p class="c-two">Ejemplo padding a todas las direcciones:</p>
-                <pre class="mb-15"><code></code> p-1 p-2 p-3 ... p-10</pre>
+                <pre class="mb-4"><code></code> p-1 p-2 p-3 ... p-16</pre>
                 <p class="c-two">Ejemplo padding top:</p>
-                <pre class="mb-15"><code></code> pt-1 pt-2 pt-3 ... pt-10</pre>
+                <pre class="mb-4"><code></code> pt-1 pt-2 pt-3 ... pt-16</pre>
                 <p class="c-two">Ejemplo padding bottom:</p>
-                <pre class="mb-15"><code></code> pb-1 pb-2 pb-3 ... pb-10</pre>
+                <pre class="mb-4"><code></code> pb-1 pb-2 pb-3 ... pb-16</pre>
                 <p class="c-two">Ejemplo padding left:</p>
-                <pre class="mb-15"><code></code> pl-1 pl-2 pl-3 ... pl-10</pre>
+                <pre class="mb-4"><code></code> pl-1 pl-2 pl-3 ... pl-16</pre>
                 <p class="c-two">Ejemplo padding rigth:</p>
-                <pre class="mb-15"><code></code> pr-1 pr-2 pr-3 ... pr-10</pre>
+                <pre class="mb-4"><code></code> pr-1 pr-2 pr-3 ... pr-16</pre>
+                <p class="c-two">Ejemplo de padding horizontal:</p>
+                <pre class="mb-4"><code></code> px-1 px-2 px-3 ... px-16</pre>
+                <p class="c-two">Ejemplo de padding vertical:</p>
+                <pre class="mb-4"><code></code> py-1 py-2 py-3 ... py-16</pre>
+                <!--uso de la clase margin-->
+                <h3 id="margin" class="c-two">margin</h3>
+                <p>Las clases predefinidas de margen permiten ajustar el espaciado entre elementos de manera flexible,
+                    facilitando un diseño más ordenado y una mejor distribución del contenido.</p>
+                <p>Siguiendo la misma idea de escala progresiva que en padding, cada clase utiliza valores en rem,
+                    asegurando coherencia, accesibilidad y adaptabilidad en cualquier resolución de pantalla. Esto
+                    simplifica el control del diseño y agiliza el flujo de trabajo en el desarrollo web. </p>
+                <p>La única diferencia es el uso del valor auto, disponible en los márgenes para centrar elementos de
+                    manera automática dentro de su contenedor. Esto brinda mayor control sobre la alineación y facilita
+                    la creación de diseños responsivos.</p>
+                <h4 class="c-two">Clases Generales (m-*)</h4>
+                <p>Las clases de margin generales aplican el mismo espaciado en todos los lados del elemento:</p>
+                <pre class="mb-4"><code>&lt;div class="m-3"&gt;Contenido con padding uniforme&lt;/div&gt;</code></pre>
+                <p>Tenemos opciones desde m-1 hasta m-16 lo que permite ajustar el margin desde 4px hasta 64px en una
+                    escala progresiva ademas del valor auto.</p>
+                <h4 class="c-two"> Clases Direccionales (mt-*, mb-*, ml-*, mr-*, mx-*, my-*)</h4>
+                <p>Puedes usar la dirección en la que se aplicara el padding junto a la proporción de padding antes
+                    descrita mt-* (arriba), mb-* (abajo), ml-* (izquierda), mr-* (derecha), mx-* (horizontal) y my-*
+                    (vertical).</p>
+                <p class="c-two">Ejemplo margin a todas las direcciones:</p>
+                <pre class="mb-4"><code></code> m-1 m-2 m-3 ... m-16 m-auto</pre>
+                <p class="c-two">Ejemplo margin top:</p>
+                <pre class="mb-4"><code></code> mt-1 mt-2 mt-3 ... mt-16 mt-auto</pre>
+                <p class="c-two">Ejemplo margin bottom:</p>
+                <pre class="mb-4"><code></code> mb-1 mb-2 mb-3 ... mb-16 mb-auto</pre>
+                <p class="c-two">Ejemplo margin left:</p>
+                <pre class="mb-4"><code></code> ml-1 ml-2 ml-3 ... ml-16 ml-auto</pre>
+                <p class="c-two">Ejemplo margin rigth:</p>
+                <pre class="mb-4"><code></code> mr-1 mr-2 mr-3 ... mr-16 mr-auto</pre>
+                <p class="c-two">Ejemplo de margin horizontal:</p>
+                <pre class="mb-4"><code></code> mx-1 mx-2 mx-3 ... mx-16 mx-auto</pre>
+                <p class="c-two">Ejemplo de margin vertical:</p>
+                <pre class="mb-4"><code></code> my-1 my-2 my-3 ... my-16 my-auto</pre>
+                <!--uso de width-->
+                <h3 id="width" class="c-two">width</h3>
+                <p>El sistema de clases utilitarias para definir el ancho de los elementos sigue una escala progresiva
+                    que mantiene coherencia y flexibilidad en el diseño. Para los valores más pequeños, los incrementos
+                    son de 4px, abarcando desde <span class="bg-six">w-1 hasta w-6</span>. A partir de <span
+                        class="bg-six">w-8 y hasta w-16</span>, los incrementos aumentan a
+                    8px, mientras que desde <span class="bg-six">w-20 en adelante, hasta w-90</span>, los valores crecen
+                    en pasos de 16px.</p>
+                <p>
+                    Esta estructura permite ajustar el ancho de los elementos de forma intuitiva, asegurando una mejor
+                    distribución del contenido y una mayor adaptabilidad en diferentes resoluciones de pantalla. </p>
+                <p class="c-two">w-1 hasta w-6</p>
+                <pre class="mb-4"><code></code> w-1 w-2 w-3 w-4 w-5 w-6</pre>
+                <p class="c-two">w-8 y hasta w-16</p>
+                <pre class="mb-4"><code></code> w-8 w-10 w-12 w-14 w-16</pre>
+                <p class="c-two">w-20 hasta w-90</p>
+                <pre class="mb-4"><code></code> w-20 w-24 w-28 w-32 ... w-82 w-86 w-90</pre>
+                <p>también puedes usar porcentajes y width adaptable al contenido</p>
+                <h4 class="c-two">width con porcentajes</h4>
+                <p>Las clases de ancho basado en porcentajes ofrecen una solución flexible y adaptable para el diseño
+                    responsivo. Al utilizar valores relativos en lugar de fijos, los elementos pueden ajustarse
+                    dinámicamente al tamaño de su contenedor, asegurando una mejor experiencia en distintos tamaños de
+                    pantalla.</p>
+                <p>los porcentajes disponibles son: <span class="krub-bold c-green">10% 25% 33.3% 50% 66.6% 75%
+                        100%</span></p>
+                <pre class="mb-4"><code></code> w-10p w-25p w-33p w-50p w-66p w-75p w-100p</pre>
+                <h4 class="c-two">width adactable al contenido</h4>
+                <p>Las clases de ancho que se ajustan al contenido permiten que los elementos ocupen solo el espacio
+                    necesario según su contenido, sin forzar dimensiones fijas. Esto es ideal para elementos como
+                    botones, etiquetas o contenedores que no deben ocupar más espacio del requerido.
+
+                    El uso de valores como <span class="bg-six">fit-content, max-content y min-content</span> ofrece
+                    flexibilidad en el diseño,
+                    asegurando que los elementos se adapten de manera óptima a diferentes longitudes de texto o
+                    contenido dinámico. Esto mejora la accesibilidad y mantiene una distribución eficiente en cualquier
+                    entorno responsivo.</p>
+                <p>los valores disponibles son:</p>
+                <pre class="mb-4"><code></code> w-fit w-max w-min </pre>
+                <h4 class="c-two">width auto</h4>
+                <p>Tan solo usa el valor auto para la propiedad width </p>
+                <pre class="mb-4"><code></code> w-auto </pre>
+                <!--uso de height-->
+                <h3 id="height" class="c-two">height</h3>
+                <p>El sistema de clases utilitarias para definir la altura de los elementos sigue una escala progresiva
+                    que mantiene coherencia y flexibilidad en el diseño. Para los valores más pequeños, los incrementos
+                    son de 4px, abarcando desde <span class="bg-six">h-1 hasta h-6</span>. A partir de <span
+                        class="bg-six">h-8 y hasta h-16</span>, los incrementos aumentan a
+                    8px, mientras que desde <span class="bg-six">h-20 en adelante, hasta h-90</span>, los valores crecen
+                    en pasos de 16px.</p>
+                <p>
+                    Esta estructura permite ajustar la altura de los elementos de forma intuitiva, asegurando una mejor
+                    distribución del contenido y una mayor adaptabilidad en diferentes resoluciones de pantalla. </p>
+                <p class="c-two">h-1 hasta h-6</p>
+                <pre class="mb-4"><code></code> h-1 h-2 h-3 h-4 h-5 h-6</pre>
+                <p class="c-two">h-8 y hasta h-16</p>
+                <pre class="mb-4"><code></code> h-8 h-10 h-12 h-14 h-16</pre>
+                <p class="c-two">h-20 hasta h-90</p>
+                <pre class="mb-4"><code></code> h-20 h-24 h-28 h-32 ... h-82 h-86 h-90</pre>
+                <p>también puedes usar porcentajes y height adaptable al contenido</p>
+                <h4 class="c-two">height con porcentajes</h4>
+                <p>Las clases de altura basadas en porcentajes ofrecen una solución flexible y adaptable para el diseño
+                    responsivo. Al utilizar valores relativos en lugar de fijos, los elementos pueden ajustarse
+                    dinámicamente al tamaño de su contenedor, asegurando una mejor experiencia en distintos tamaños de
+                    pantalla.</p>
+                <p>los porcentajes disponibles son: <span class="krub-bold c-green">10% 25% 33.3% 50% 66.6% 75%
+                        100%</span></p>
+                <pre class="mb-4"><code></code> h-10p h-25p h-33p h-50p h-66p h-75p h-100p</pre>
+                <h4 class="c-two">height adactable al contenido</h4>
+                <p>Las clases de altura que se ajustan al contenido permiten que los elementos ocupen solo el espacio
+                    necesario según su contenido, sin forzar dimensiones fijas. Esto es ideal para elementos como
+                    contenedores que no deben ocupar más espacio del requerido.
+
+                    El uso de valores como <span class="bg-six">fit-content, max-content y min-content</span> ofrece
+                    flexibilidad en el diseño,
+                    asegurando que los elementos se adapten de manera óptima a diferentes longitudes de texto o
+                    contenido dinámico. Esto mejora la accesibilidad y mantiene una distribución eficiente en cualquier
+                    entorno responsivo.</p>
+                <p>los valores disponibles son:</p>
+                <pre class="mb-4"><code></code> h-fit h-max h-min </pre>
+                <h4 class="c-two">height auto</h4>
+                <p>Tan solo usa el valor auto para la propiedad height </p>
+                <pre class="mb-4"><code></code> h-auto </pre>
+                <h4 class="c-two">height de ventana gráfica</h4>
+                <p>Las clases de altura basadas en la ventana gráfica (vh) permiten definir elementos con una altura
+                    relativa al tamaño total de la pantalla del usuario.</p>
+
+                <p class="c-two">Utilizando:</p>
+                <p>
+                <pre class="mb-4"><code></code> h-25vh, h-50vh, h-75vh y h-100vh </pre>
+                Es posible establecer alturas equivalentes al 25%, 50%,
+                75% y 100% del viewport, respectivamente. Esto resulta útil para secciones que necesitan ajustarse
+                dinámicamente al tamaño de la pantalla, como banners, secciones de presentación o contenedores de
+                fondo a pantalla completa.</p>
+                <!--uso de border-->
+                <h3 id="border" class="c-two">border</h3>
+                <p class="mb-4">En esta librería, los bordes se controlan con la clase <span class="bg-six">b</span>,
+                    que aplica un borde sólido de 1px por
+                    defecto. Si se desea eliminar el borde, se usa <span class="bg-six">b-none</span>. También es
+                    posible definir bordes en lados
+                    específicos con:
+                <p>
+                <pre class="mb-4"><code></code> b-t  b-r  b-b  b-l </pre>
+                aplicándolos solo en la parte superior, derecha,
+                inferior o izquierda respectivamente.</p>
+                <P>
+                    El grosor del borde se gestiona con:</P>
+                <pre class="mb-4"><code></code> b-1  b-2  b-3  b-4 </pre>
+                <p>donde cada número representa el
+                    grosor en píxeles. Para cambiar el estilo del borde, se pueden usar:</p>
+                <pre class="mb-4"><code></code> b-solid  b-dashed  b-dotted  b-double </pre>
+                dependiendo de si se requiere un borde sólido, punteado, rayado o doble.
+                </p>
+                <p>
+                    El color del borde se maneja en dos categorías. Los <a href="#colores"
+                        class="t-dn c-three krub-bold">colores predefinidos en la librería</a> se
+                    identifican con nombres como
+                <pre class="mb-4"><code></code> b-green  b-blue  b-red  b-black  b-grey  b-white .. </pre>
+                <p>los cuales usan variables CSS internas (--green, --blue, etc.). Para opciones
+                    personalizadas, existen:</p>
+                <pre class="mb-4"><code></code> b-one  b-two  b-three  b-four ... b-seven  b-eight </pre>
+                <p>que permiten adaptar la <a href="#colores personalizados" class="t-dn c-three krub-bold">paleta de
+                        colores </a>según la necesidad del usuario.
+                </p>
+                <p>
+                    Para aplicar bordes redondeados, se usa <span class="bg-six">br</span> para un redondeo general. Se
+                    pueden utilizar variantes
+                    como <span class="bg-six">br-none</span> para eliminar el redondeo, para diferentes niveles de
+                    curvatura:</p>
+                <pre class="mb-4"><code></code> br-sm  br-md  br-lg </pre>
+                <p>
+                    y <span class="bg-six">br-full</span> para un borde completamente circular. También existen clases
+                    para redondear esquinas específicas:
+                </p>
+                <pre class="mb-4"><code></code> br-t-sm  br-r-sm  br-b-sm  br-l-sm </pre>
+                </p>
+                <p>
+                    Todas estas clases pueden combinarse entre sí, permitiendo una personalización flexible sin
+                    necesidad de escribir CSS adicional.</p>
             </section>
         </div>
         <div id="seccion4" class="h-auto b-b">
             <section class="p-7">
-                <h2 class="t-align-l fs-20 krub-bold">Diccionario de términos</h2>
+                <h2 class="t-align-l fs-20 krub-bold">Fuentes</h2>
+                <h3 id="tamaño de fuente" class="c-two">¿Qué tamaños de fuente ofrece la libreria?</h3>
+                <p>
+                    La librería ofrece una serie de tamaños de letra predefinidos que permiten ajustar fácilmente la
+                    tipografía sin necesidad de escribir CSS adicional.
+
+                    El tamaño base recomendado para el texto es <span class="bg-six">fs-16</span>, equivalente a 16px,
+                    ideal para párrafos y
+                    contenido general. Para textos más pequeños, se pueden usar <span class="bg-six">fs-10, fs-12 o
+                        fs-14</span>, que funcionan bien
+                    en etiquetas, notas o detalles secundarios.
+
+                    Para subtítulos y elementos destacados, <span class="bg-six">fs-20 y fs-24</span> ofrecen una buena
+                    relación entre legibilidad y
+                    jerarquía visual. Los títulos y encabezados pueden usar <span class="bg-six">fs-30, fs-36 o
+                        fs-48</span>, dependiendo del
+                    énfasis que se quiera dar.
+
+                    En secciones grandes o elementos de impacto, como hero sections, se recomienda <span
+                        class="bg-six">fs-60 o fs-72</span>, aunque
+                    en dispositivos móviles estos tamaños se ajustan automáticamente para mejorar la adaptabilidad.
+
+                    Todos estos valores siguen una escala tipográfica que mantiene la armonía visual en diferentes
+                    tamaños de pantalla.
+                </p>
+                <h4 id="fuentes" class="c-two">fuentes disponibles</h4>
+                <p>Por el momento, la librería solo incluye la fuente <span class="krub-bold">Krub de Google</span> en
+                    sus variantes <span class="krub-bold">estándar (400)</span>
+                    y <span class="krub-bold">bold (700)</span>. Esto garantiza un diseño limpio y consistente,
+                    manteniendo un equilibrio
+                    entre legibilidad y estilo.
+
+                    Para aplicar estas fuentes, se pueden usar las siguientes clases:
+                </p>
+                <pre class="mb-4"><code></code> krub-regular /*Aplica Krub en su variante estándar (400)*/ </pre>
+                <pre class="mb-4"><code></code> krub-bold /*Aplica Krub en su variante negrita (700)*/ </pre>
+                <p>
+                    Para mayor flexibilidad, se recomienda crear un archivo CSS aparte donde se puedan definir fuentes
+                    personalizadas según las necesidades del proyecto. En futuras versiones, se podrían agregar más
+                    opciones tipográficas de manera nativa.</p>
+                <h4 id="alineacion de texto" class="c-two">alineacion de texto</h4>
+                <p>La librería incluye clases utilitarias para alinear y modificar el estilo del texto de manera
+                    sencilla.
+
+                    Para la alineación, se pueden utilizar:</p>
+                <pre class="mb-4"><code></code> t-align-c /*para centrar el texto*/ </pre>
+                <pre class="mb-4"><code></code> t-align-r /*para alinearlo a la derecha*/ </pre>
+                <pre class="mb-4"><code></code> t-align-l /*para alinearlo a la izquierda*/ </pre>
+                <p>Además, la clase <span class="bg-six">t-dn</span> elimina cualquier subrayado o decoración del texto,
+                    útil para enlaces o
+                    elementos donde se quiera un estilo más limpio.
+
+                </p>
+            </section>
+        </div>
+        <div id="seccion5" class="h-auto b-b">
+            <section class="p-7">
+                <h2 class="t-align-l fs-55 krub-bold">Diccionario de términos</h2>
                 <h3 id="clases utilitarias" class="c-two">¿Qué es una clase utilitaria?</h3>
                 <p>
                     Una clase utilitaria en CSS es una clase predefinida con una única responsabilidad: aplicar un
@@ -268,14 +478,14 @@
                 <p>y esto hará referencia a esta clase de la librería, de esta forma ahorraremos tiempo al escribir
                     Código</p>
                 <pre><code> .bg-yellow {
-                    background-color: var(--yellow);
-                }</code></pre>
+                        background-color: var(--yellow);
+                    }</code></pre>
 
 
             </section>
         </div>
     </main>
-    <footer class="c-white bg-one p-15 t-align-c krub-regular">
+    <footer class="c-white bg-one p-2 t-align-c krub-regular">
         <p class="fs-20">
             Todos los derechos reservados - Christian Samuel Garcia
         </p>
