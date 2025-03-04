@@ -1,0 +1,42 @@
+:root {
+    --one: #d00000ff;
+    --two: #fca311ff;
+    --three: #6a040fff;
+    --four: #6b705cff;
+    --five: #e5e5e5ff;
+    --six: #bde0feff;
+    --seven: #1976d2ff;
+    --eight: #f4d58dff;
+}
+
+.flex {
+    display: flex;
+}
+
+.align {
+    align-items: center;
+}
+
+pre {
+    background-color: #282c34;
+    color: #abb2bf;
+    padding: 15px;
+    border-radius: 8px;
+    font-family: "Fira Code", monospace;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    border-left: 5px solid var(--two);
+}
+
+code {
+    font-family: "Fira Code", monospace;
+}
+
+ul {
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+ol {
+    list-style-type: decimal;
+}
